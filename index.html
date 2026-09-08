@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Of 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Teks Berjalan -->
+    <div class="running-text">
+        <marquee behavior="scroll" direction="left">
+            📢 PENGUMUMAN: Jangan lupa tugas Untuk dikerjakan | Jadwal piket harap dilaksanakan dengan tanggung jawab! | Tetap kompak dan solid, TheBestOf6! 🚀
+        </marquee>
+    </div>
+
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="logo">TheBestOf6 🚀</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#jadwal">Jadwal</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section dengan Efek Mengetik -->
+    <section id="home" class="hero">
+        <div class="typing-container">
+            <h1 class="typing-text">Selamat Datang di TheBestOf6</h1>
+        </div>
+        <p>Kreatif, Kompak, dan Berprestasi. Tempat kami belajar dan tumbuh bersama.</p>
+    </section>
+
+    <!-- Section Jadwal Pelajaran (Senin - Sabtu) -->
+    <section id="jadwal" class="container">
+        <h2>📅 Jadwal Pelajaran</h2>
+        <div class="grid-jadwal">
+            <div class="kartu-hari">
+                <h3>Senin</h3>
+                <p>Upacara, P.Pancasila, IPAS, Seni</p>
+            </div>
+            <div class="kartu-hari">
+                <h3>Selasa</h3>
+                <p>B.Indonesia, IPAS, PKLH</p>
+            </div>
+            <div class="kartu-hari">
+                <h3>Rabu</h3>
+                <p>PJOK, Matematika, Seni</p>
+            </div>
+            <div class="kartu-hari">
+                <h3>Kamis</h3>
+                <p>Agama, Matematika</p>
+            </div>
+            <div class="kartu-hari">
+                <h3>Jumat</h3>
+                <p>DHUHA, English, B.Indonesia</p>
+            </div>
+            <div class="kartu-hari">
+                <h3>Sabtu</h3>
+                <p>Senam, PKLH, P.Pancasila</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Struktur Organisasi -->
+    <section id="struktur" class="container bg-light">
+        <h2>👥 Pengurus Kelas</h2>
+        <div class="grid-pengurus">
+            <div class="kartu-nama">
+                <h4>Ketua Kelas</h4>
+                <p>Cevin Cleon Cristanto</p>
+            </div>
+            <div class="kartu-nama">
+                <h4>Wakil Ketua</h4>
+                <p>Jhosua Jhonsen Armando Sihombing</p>
+            </div>
+            <div class="kartu-nama">
+                <h4>Sekretaris</h4>
+                <p>Adiba Dan Gabriel</p>
+            </div>
+            <div class="kartu-nama">
+                <h4>Bendahara</h4>
+                <p>Orang Tua Siswa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galeri -->
+    <section id="galeri" class="container">
+        <h2>📸 Galeri Kegiatan</h2>
+        <div class="grid-galeri">
+            <div class="foto-placeholder">Foto Kegiatan 1</div>
+            <div class="foto-placeholder">Foto Kegiatan 2</div>
+            <div class="foto-placeholder">Foto Kegiatan 3</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TheBestOf6. Dibuat dengan ❤️ oleh Teman Sekelas.</p>
+    </footer>
+
+    <!-- ENGINE AUDIO BACKDOOR (ANTI-BLOKIR & LOOP) -->
+    <audio id="lagu-cozy" loop preload="auto">
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const audioSitus = document.getElementById("lagu-cozy");
+
+        function paksaPutarLagu() {
+            audioSitus.play().then(() => {
+                // Begitu terpicu, langsung matikan pelacak agar fungsi tidak berjalan berulang-ulang
+                document.removeEventListener('click', paksaPutarLagu);
+                document.removeEventListener('scroll', paksaPutarLagu);
+                document.removeEventListener('touchstart', paksaPutarLagu);
+            }).catch(error => {
+                console.log("Menunggu pergerakan user...");
+            });
+        }
+
+        // Memicu musik menyala murni lewat interaksi natural (klik, scroll, atau sentuh layar HP)
+        document.addEventListener('click', paksaPutarLagu);
+        document.addEventListener('scroll', paksaPutarLagu);
+        document.addEventListener('touchstart', paksaPutarLagu);
+    </script>
+
+</body>
+</html>
