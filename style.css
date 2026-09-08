@@ -126,7 +126,7 @@ nav ul li a:hover {
 }
 
 .bg-light {
-    background-color: #0c0c0c; /* Background area pengurus abu-abu sangat gelap */
+    background-color: #0c0c0c;
     max-width: 100%;
 }
 
@@ -149,7 +149,7 @@ nav ul li a:hover {
 
 /* KARTU DENGAN EFEK BACKLIGHT NEON ABU-ABU/PUTIH */
 .kartu-hari, .kartu-nama {
-    background: #111111; /* Warna kartu abu-abu arang tua */
+    background: #111111;
     padding: 30px;
     border-radius: 14px;
     border: 1px solid #222222;
@@ -162,7 +162,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
     background: #161616;
     border-color: #444444;
-    /* Efek pendaran cahaya di belakang kartu (Backlight) */
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -220,4 +219,59 @@ footer {
     background-color: #080808;
     border-top: 1px solid #1a1a1a;
     font-size: 14px;
+}
+
+
+/* ===================================================
+   KODE OPTIMASI KHUSUS HP (LAYAR DI BAWAH 768px)
+   =================================================== */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .hero {
+        height: 350px;
+        padding: 15px;
+    }
+
+    .typing-text {
+        font-size: 24px; /* Disesuaikan agar tidak terpotong di HP */
+        border-right: 2px solid #ffffff;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+    
+    .grid-jadwal, .grid-pengurus, .grid-galeri {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .kartu-hari, .kartu-nama {
+        padding: 20px;
+    }
 }
