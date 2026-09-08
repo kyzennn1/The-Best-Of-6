@@ -22,6 +22,7 @@
             <ul>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#jadwal">Jadwal</a></li>
+                <li><a href="#piket">Piket</a></li>
                 <li><a href="#struktur">Struktur</a></li>
                 <li><a href="#galeri">Galeri</a></li>
             </ul>
@@ -67,8 +68,39 @@
         </div>
     </section>
 
+    <!-- SECTION JADWAL PIKET (BARU) -->
+    <section id="piket" class="container bg-light">
+        <h2>🧹 Jadwal Piket Kebersihan</h2>
+        <div class="grid-piket">
+            <div class="kartu-piket">
+                <h3>Senin</h3>
+                <p>Cevin, Adiba, Murid 3, Murid 4</p>
+            </div>
+            <div class="kartu-piket">
+                <h3>Selasa</h3>
+                <p>Jhosua, Gabriel, Murid 7, Murid 8</p>
+            </div>
+            <div class="kartu-piket">
+                <h3>Rabu</h3>
+                <p>Murid 9, Murid 10, Murid 11, Murid 12</p>
+            </div>
+            <div class="kartu-piket">
+                <h3>Kamis</h3>
+                <p>Murid 13, Murid 14, Murid 15, Murid 16</p>
+            </div>
+            <div class="kartu-piket">
+                <h3>Jumat</h3>
+                <p>Murid 17, Murid 18, Murid 19, Murid 20</p>
+            </div>
+            <div class="kartu-piket">
+                <h3>Sabtu</h3>
+                <p>Murid 21, Murid 22, Murid 23, Murid 24</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Section Struktur Organisasi -->
-    <section id="struktur" class="container bg-light">
+    <section id="struktur" class="container">
         <h2>👥 Pengurus Kelas</h2>
         <div class="grid-pengurus">
             <div class="kartu-nama">
@@ -91,7 +123,7 @@
     </section>
 
     <!-- Section Galeri -->
-    <section id="galeri" class="container">
+    <section id="galeri" class="container bg-light">
         <h2>📸 Galeri Kegiatan</h2>
         <div class="grid-galeri">
             <div class="foto-placeholder">Foto Kegiatan 1</div>
@@ -115,7 +147,6 @@
 
         function paksaPutarLagu() {
             audioSitus.play().then(() => {
-                // Begitu terpicu, langsung matikan pelacak agar fungsi tidak berjalan berulang-ulang
                 document.removeEventListener('click', paksaPutarLagu);
                 document.removeEventListener('scroll', paksaPutarLagu);
                 document.removeEventListener('touchstart', paksaPutarLagu);
@@ -124,7 +155,6 @@
             });
         }
 
-        // Memicu musik menyala murni lewat interaksi natural (klik, scroll, atau sentuh layar HP)
         document.addEventListener('click', paksaPutarLagu);
         document.addEventListener('scroll', paksaPutarLagu);
         document.addEventListener('touchstart', paksaPutarLagu);

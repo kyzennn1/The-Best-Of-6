@@ -275,3 +275,48 @@ footer {
         padding: 20px;
     }
 }
+.grid-piket {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.kartu-piket {
+    background: #111111;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #222222;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    text-align: left;
+}
+
+.kartu-piket:hover {
+    transform: translateY(-5px);
+    background: #161616;
+    border-color: #444444;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.kartu-piket h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.kartu-piket p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Serta tambahkan .grid-piket dan .kartu-piket di dalam @media HP kamu agar pas di HP */
+@media screen and (max-width: 768px) {
+    .grid-piket {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .kartu-piket {
+        padding: 20px;
+    }
+}
