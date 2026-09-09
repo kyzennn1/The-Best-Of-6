@@ -275,3 +275,49 @@ footer {
         padding: 20px;
     }
 }
+/* ===================================================
+   DESAIN DUA TOMBOL TIKTOK KELAS & GURU (BACKLIGHT)
+   =================================================== */
+.medsos-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Memberi jarak antara tombol kelas dan tombol guru */
+    margin-bottom: 20px;
+}
+
+.tombol-medsos {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background: #111111;
+    color: #888888;
+    border: 1px solid #222222;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.5px;
+}
+
+/* Efek Backlight menyala putih keabuan terang saat di-hover / disentuh */
+.tombol-medsos:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    border-color: #666666;
+    background: #161616;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.18);
+}
+
+/* Penyesuaian ukuran dan susunan di HP agar tidak meluber */
+@media screen and (max-width: 768px) {
+    .medsos-container {
+        flex-direction: column; /* Tombol tersusun atas-bawah saat dibuka di HP */
+        align-items: center;
+        gap: 10px;
+    }
+    .tombol-medsos {
+        width: 80%; /* Tombol melebar proporsional di layar HP */
+        text-align: center;
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
